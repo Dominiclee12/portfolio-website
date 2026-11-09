@@ -58,8 +58,8 @@ nav .right a:last-child {
     align-items: center;
     padding: 0 80px;
     margin: 50px 0;
-    gap: 40px;
     margin-bottom: 100px;
+    gap: 40px;
 }
 
 #hero .text {
@@ -102,9 +102,46 @@ nav .right a:last-child {
     border-radius: 50%;
 }
 
+/* SECTION SKILLS */
+#skills {
+    padding: 0 80px;
+    margin: 50px 0;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#skills p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#skills .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+#skills .cell {
+    font-size: 24px;
+    border: 1px solid gray;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+
 @media (max-width: 850px) {
     /* SECTION HERO */
     #hero .text h2 {
+        font-size: 32px;
+    }
+
+    /* SECTION SKILLS */
+    #skills h2 {
         font-size: 32px;
     }
 }
@@ -145,6 +182,15 @@ nav .right a:last-child {
     }
 
     #hero .text h2 {
+        font-size: 28px;
+    }
+
+    /* SECTION SKILLS */
+    #skills {
+        padding: 0 20px;
+    }
+
+    #hero h2 {
         font-size: 28px;
     }
 }
