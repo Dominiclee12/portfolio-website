@@ -51,7 +51,7 @@ nav .right a:last-child {
     border-radius: 5px;
 }
 
-/* HERO SECTION */
+/* SECTION HERO */
 #hero {
     display: flex;
     justify-content: space-between;
@@ -68,6 +68,7 @@ nav .right a:last-child {
 
 #hero .text h2 {
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 #hero .text .links {
@@ -111,6 +112,7 @@ nav .right a:last-child {
 #skills h2 {
     text-align: center;
     font-size: 36px;
+    margin-bottom: 20px;
 }
 
 #skills p {
@@ -133,6 +135,41 @@ nav .right a:last-child {
     border-radius: 5px;
 }
 
+/* SECTION PORTFOLIOS */
+#portfolios {
+    padding: 0 80px;
+    margin: 50px 0;
+}
+
+#portfolios h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#portfolios .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#portfolios .project {
+    flex: 0 0 calc((100% - 60px) / 4);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+#portfolios .project .actions {
+    margin-top: auto;
+}
+
+#portfolios .project .actions button {
+    padding: 4px 8px;
+}
 
 @media (max-width: 850px) {
     /* SECTION HERO */
@@ -142,6 +179,11 @@ nav .right a:last-child {
 
     /* SECTION SKILLS */
     #skills h2 {
+        font-size: 32px;
+    }
+
+    /* SECTION PORTFOLIOS */
+    #portfolios h2 {
         font-size: 32px;
     }
 }
@@ -190,7 +232,16 @@ nav .right a:last-child {
         padding: 0 20px;
     }
 
-    #hero h2 {
+    #skills h2 {
+        font-size: 28px;
+    }
+
+    /* SECTION PORTFOLIOS */
+    #portfolios {
+        padding: 0 20px;
+    }
+
+    #portfolios h2 {
         font-size: 28px;
     }
 }
